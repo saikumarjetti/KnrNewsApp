@@ -33,6 +33,7 @@
         {
           "android": {
             "enableMinifyInReleaseBuilds": true,
+            "enableProguardInReleaseBuilds": true,
             "enableShrinkResourcesInReleaseBuilds": true
           },
           "ios": {
