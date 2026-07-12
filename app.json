@@ -32,9 +32,12 @@
         "expo-build-properties",
         {
           "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
             "enableMinifyInReleaseBuilds": true,
             "enableProguardInReleaseBuilds": true,
-            "enableShrinkResourcesInReleaseBuilds": true
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "useLegacyPackaging": false
           },
           "ios": {
             "useFrameworks": "static"
