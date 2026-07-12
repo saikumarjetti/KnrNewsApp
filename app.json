@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "KNRNewsApp",
-    "slug": "KNRNewsApp",
-    "version": "1.0.0",
+    "name": "KNR Channel",
+    "slug": "knrnews-app",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -13,17 +13,39 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.saikumarj.knrnewsapp",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [],
+      "package": "com.saikumarj.knrnewsapp",
+      "versionCode": 2
     },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      "react-native-video"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c9f8b8ad-63cc-4ebd-86bf-ba092dad9c0b"
+      }
+    },
+    "owner": "saikumarj"
   }
 }
